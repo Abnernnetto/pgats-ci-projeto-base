@@ -13,7 +13,7 @@ jobs:
   # descricacao do job
   e2e-tests:
     #maquina que o job vai executar
-    runs-on: ['ubuntu-lastes']
+    runs-on: ['ubuntu-lastest']
     #passo a passo das acoes do job
     steps:
       # - run: | 

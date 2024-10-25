@@ -3,21 +3,21 @@
 name: 'Execução Agendada'
 
 # Regras de Execução de Disparo (Triggers)
-  #Gatilho de execucao Agendada = schedule
+#Gatilho de execucao Agendada = schedule
 
-on: 
+on:
   schedule:
     - cron: '0 2 * * 1-5'
 
-jobs: 
+jobs:
   # descricacao do job
   e2e-tests:
     #maquina que o job vai executar
     runs-on: ['ubuntu-latest']
     #passo a passo das acoes do job
     steps:
-      # - run: | 
-            #git clone <url>
+      # - run: |
+      #git clone <url>
       - uses: actions/checkout@v4
       # - uses: actions/setup-node@v4
       #   with:

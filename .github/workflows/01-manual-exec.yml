@@ -3,21 +3,20 @@
 name: 'Execução Manual'
 
 # Regras de Execução de Disparo (Triggers)
-  #Gatilho de execucao Manual = workflow_dispatch
+#Gatilho de execucao Manual = workflow_dispatch
 
-on: 
+on:
   workflow_dispatch:
 
-
-jobs: 
+jobs:
   # descricacao do job
   e2e-tests:
     #maquina que o job vai executar
     runs-on: ['ubuntu-latest']
     #passo a passo das acoes do job
     steps:
-      # - run: | 
-            #git clone <url>
+      # - run: |
+      #git clone <url>
       - uses: actions/checkout@v4
       # - uses: actions/setup-node@v4
       #   with:

@@ -35,8 +35,8 @@ jobs:
 
   unit:
     runs-on: ubuntu-lastest
-    needs:  [inspection]
-    
+    needs: [inspection]
+
     steps:
       - uses: action/checkout@v4
 
@@ -49,7 +49,6 @@ jobs:
       - name: Testes de Unidade
         run: yarn run test
 
-      
   # descricao do job
   e2e-tests:
     # maquina que o job vai executar

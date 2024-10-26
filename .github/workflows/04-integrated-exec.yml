@@ -20,7 +20,6 @@ on:
 jobs:
   inspection:
     runs-on: ubuntu-latest
-    needs: [inspection]
 
     steps:
       - uses: actions/checkout@v4
